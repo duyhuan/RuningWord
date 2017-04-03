@@ -78,6 +78,7 @@ class ViewController: UIViewController {
             }
         } else {
             checkPress = true
+            self.ta = self.numberOfTag
             sender.setTitle("Run", for: UIControlState.normal)
             timer.invalidate()
         }
