@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter some letters" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25y-Wt-JOe">
-                                <rect key="frame" x="150" y="20" width="367" height="30"/>
+                                <rect key="frame" x="150" y="50" width="367" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
@@ -31,7 +31,7 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPp-pV-hpN">
-                                <rect key="frame" x="537" y="20" width="50" height="30"/>
+                                <rect key="frame" x="537" y="50" width="50" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="nws-Jc-LqU"/>
                                 </constraints>
@@ -40,13 +40,62 @@
                                     <action selector="handleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyl-KN-mmx"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Shw-mC-BHQ">
+                                <rect key="frame" x="218.5" y="10" width="230" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wX6-pT-ItL">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.19607505202293396" green="0.83919036388397217" blue="0.96210771799087524" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JIg-dO-ayO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqX-Br-qzB">
+                                        <rect key="frame" x="40" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.045328776039999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dxm-Oy-8zj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4zD-nr-mfc">
+                                        <rect key="frame" x="80" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.027212280780076981" green="0.023303143680095673" blue="0.040792815387248993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="682-2W-pR5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZc-mk-dqa">
+                                        <rect key="frame" x="120" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gNL-go-hb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1K-hX-3II">
+                                        <rect key="frame" x="160" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.24111267924308777" green="0.97641140222549438" blue="0.028849571943283081" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ioI-Yl-vWI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1km-3x-fAh">
+                                        <rect key="frame" x="200" y="0.0" width="30" height="30"/>
+                                        <color key="backgroundColor" red="0.97981494665145874" green="0.27291971445083618" blue="0.014327634125947952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="handleButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T7b-G2-3ga"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="fPp-pV-hpN" firstAttribute="centerY" secondItem="25y-Wt-JOe" secondAttribute="centerY" id="Ang-zv-9G7"/>
+                            <constraint firstItem="Shw-mC-BHQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2g-0g-OD8"/>
                             <constraint firstItem="25y-Wt-JOe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="150" id="JFQ-fo-LzM"/>
+                            <constraint firstItem="Shw-mC-BHQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="MIr-Oq-pjx"/>
                             <constraint firstItem="fPp-pV-hpN" firstAttribute="leading" secondItem="25y-Wt-JOe" secondAttribute="trailing" constant="20" id="PMg-Xz-Avp"/>
-                            <constraint firstItem="25y-Wt-JOe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="aQe-9h-g32"/>
+                            <constraint firstItem="25y-Wt-JOe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="50" id="aQe-9h-g32"/>
                             <constraint firstItem="25y-Wt-JOe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eHD-vS-zgx"/>
                         </constraints>
                     </view>
@@ -56,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="15" y="77"/>
+            <point key="canvasLocation" x="-56" y="18"/>
         </scene>
     </scenes>
 </document>

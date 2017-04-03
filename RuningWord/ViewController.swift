@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     var letter = Letter()
     var checkPress: Bool = true
     
+    var textColor: UIColor = UIColor.blue
+    
     var arr: [[[Int]]] = [[[Int]]]()
     
     override func viewDidLoad() {
@@ -55,6 +57,9 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func handleButtonColor(_ sender: UIButton) {
+        textColor = sender.backgroundColor!
+    }
     
     
     @IBAction func handleTextField(_ sender: UITextField) {
@@ -82,7 +87,7 @@ class ViewController: UIViewController {
     func mediate(count: Int, indexI: Int, indexJ: Int, arrMed: [[Int]]) {
         if let viewH = view.viewWithTag(self.tagNumber + 6*count) {
             if arrMed[indexI][indexJ] == 1 {
-                viewH.backgroundColor = UIColor.blue
+                viewH.backgroundColor = textColor
             }
         }
     }
