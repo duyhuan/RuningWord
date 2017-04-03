@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     var arrView: [UIView] = [UIView]()
     var ta = 0
     var numberOfTag = 0
-    var pop = 500
+    var pop = 1000
     
     var numberOfChar = 0
     var timer = Timer()
