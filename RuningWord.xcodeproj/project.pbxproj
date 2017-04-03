@@ -12,6 +12,7 @@
 		330081CB1E8A5FDA00BD4757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330081C91E8A5FDA00BD4757 /* Main.storyboard */; };
 		330081CD1E8A5FDA00BD4757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330081CC1E8A5FDA00BD4757 /* Assets.xcassets */; };
 		330081D01E8A5FDA00BD4757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330081CE1E8A5FDA00BD4757 /* LaunchScreen.storyboard */; };
+		33DE34161E91F79800510B93 /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DE34151E91F79800510B93 /* Letters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		330081CC1E8A5FDA00BD4757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		330081CF1E8A5FDA00BD4757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		330081D11E8A5FDA00BD4757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33DE34151E91F79800510B93 /* Letters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Letters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		330081C41E8A5FDA00BD4757 /* RuningWord */ = {
 			isa = PBXGroup;
 			children = (
+				33DE34151E91F79800510B93 /* Letters.swift */,
 				330081C51E8A5FDA00BD4757 /* AppDelegate.swift */,
 				330081C71E8A5FDA00BD4757 /* ViewController.swift */,
 				330081C91E8A5FDA00BD4757 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33DE34161E91F79800510B93 /* Letters.swift in Sources */,
 				330081C81E8A5FDA00BD4757 /* ViewController.swift in Sources */,
 				330081C61E8A5FDA00BD4757 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +304,7 @@
 				330081D61E8A5FDA00BD4757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
