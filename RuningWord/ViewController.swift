@@ -25,12 +25,12 @@ class ViewController: UIViewController {
     
     var textColor: UIColor = UIColor.blue
     
-    var arr: [[[Int]]] = [[[Int]]]()
+    var arrLetters: [[[Int]]] = [[[Int]]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arr = [letter.arrA, letter.arrB, letter.arrC, letter.arrD, letter.arrE, letter.arrF, letter.arrG, letter.arrH, letter.arrI, letter.arrJ, letter.arrK, letter.arrL, letter.arrM, letter.arrN, letter.arrO, letter.arrP, letter.arrQ, letter.arrR, letter.arrS, letter.arrT, letter.arrU, letter.arrV, letter.arrW, letter.arrX, letter.arrY, letter.arrZ, letter.arr0, letter.arr1, letter.arr2, letter.arr3, letter.arr4, letter.arr5, letter.arr6, letter.arr7, letter.arr8, letter.arr9, letter.arrSpace]
+        arrLetters = [letter.arrA, letter.arrB, letter.arrC, letter.arrD, letter.arrE, letter.arrF, letter.arrG, letter.arrH, letter.arrI, letter.arrJ, letter.arrK, letter.arrL, letter.arrM, letter.arrN, letter.arrO, letter.arrP, letter.arrQ, letter.arrR, letter.arrS, letter.arrT, letter.arrU, letter.arrV, letter.arrW, letter.arrX, letter.arrY, letter.arrZ, letter.arr0, letter.arr1, letter.arr2, letter.arr3, letter.arr4, letter.arr5, letter.arr6, letter.arr7, letter.arr8, letter.arr9, letter.arrSpace]
         
         
         for indexRow in 0..<7 {
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         numberOfChar = (myTextField.text?.characters.count)!
     }
     
-    @IBAction func handleButton(_ sender: UIButton) {
+    @IBAction func handleButtonRun(_ sender: UIButton) {
         
         numberOfChar = (myTextField.text?.characters.count)!
         
@@ -84,9 +84,9 @@ class ViewController: UIViewController {
         
     }
     
-    func mediate(count: Int, indexI: Int, indexJ: Int, arrMed: [[Int]]) {
+    func mediateArray(count: Int, indexI: Int, indexJ: Int, arrMediate: [[Int]]) {
         if let viewH = view.viewWithTag(self.tagNumber + 6*count) {
-            if arrMed[indexI][indexJ] == 1 {
+            if arrMediate[indexI][indexJ] == 1 {
                 viewH.backgroundColor = textColor
             }
         }
@@ -120,7 +120,7 @@ class ViewController: UIViewController {
                     count += 1
                     for y in 0..<letter.arrAllLetter.count {
                         if letter.arrAllLetter[y] == arrCharacter[x] {
-                            mediate(count: count, indexI: i, indexJ: j, arrMed: arr[y])
+                            mediateArray(count: count, indexI: i, indexJ: j, arrMediate: arrLetters[y])
                         }
                     }
                 }

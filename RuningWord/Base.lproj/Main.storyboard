@@ -37,7 +37,7 @@
                                 </constraints>
                                 <state key="normal" title="Run"/>
                                 <connections>
-                                    <action selector="handleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyl-KN-mmx"/>
+                                    <action selector="handleButtonRun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yR8-ra-ZfA"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Shw-mC-BHQ">
